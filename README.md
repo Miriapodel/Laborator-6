@@ -36,3 +36,7 @@
 
  verificare: se deschide un command line si se scrie comanda
  git --version
+
+5.
+Extragerea materialului de pe acest git repository:
+git clone https://github.com/Lomenita/242PAOuniv.git
