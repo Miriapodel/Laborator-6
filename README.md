@@ -24,7 +24,7 @@
 
 4. Instalare git
  https://git-scm.com/download/win
- In environment variables for your account, in PATH se adauga calea catre bin : exemmplu C:\Program Files\Git\bin
+ In environment variables for your account, in PATH se adauga calea catre bin : exemplu C:\Program Files\Git\bin
 
  verificare: se deschide un command line si se scrie comanda
  git --version
