@@ -10,15 +10,23 @@
  se va deschide un command line si se va verifica instalarea:
  java -version
 
-2. Instalare intellij 
- https://www.jetbrains.com/community/education/#students
+2. Instalare intellij  
+   a. Obtinere Licenta intellij
+    https://www.jetbrains.com/shop/eform/students
+   
+   b. downloadati intellij
+   https://www.jetbrains.com/idea/
+
+   c. Instalare licenta:
+     Open your Intellij.
+     Go to Help | Register and click Activate New License.
+     In the Get license from section, select Activation code.
+     Drag and drop the file with the activation code into the dialog or copy the code and paste it into the corresponding field.
+     Click Activate.
 
  (aceasta versiune ar fi free dar varianta cu licenta are mai multe optiuni
  https://www.jetbrains.com/idea/download/?fromIDE=&section=windows)
-
- Licenta intellij
- https://www.jetbrains.com/shop/eform/students
-
+ 
 3. Creare cont de GitHub
  https://github.com/
 
@@ -28,3 +36,7 @@
 
  verificare: se deschide un command line si se scrie comanda
  git --version
+
+5.
+Extragerea materialului de pe acest git repository:
+git clone https://github.com/Lomenita/242PAOuniv.git
