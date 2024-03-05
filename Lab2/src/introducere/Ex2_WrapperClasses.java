@@ -63,6 +63,8 @@ public class Ex2_WrapperClasses {
         char c3 = c2;
         System.out.println("char format = " + c1 + " Character format = " + c2 + " char format = " + c3);
 
+        char c4 = 'a';
+        System.out.println("c4 = " + c4);
 
         System.out.println("globalByte = " + globalByte);
         System.out.println("globalShort = " + globalShort);

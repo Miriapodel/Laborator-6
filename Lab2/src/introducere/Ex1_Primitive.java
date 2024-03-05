@@ -18,9 +18,9 @@ package introducere;
                                             valorile sunt afisate cu Short.MIN_VALUE, Short.MAX_VALUE
            int | 0                       -> int are valori [-2^31;2^31-1] , size 4 bytes
                                             valorile sunt afisate cu Integer.MIN_VALUE, Integer.MAX_VALUE
-          long | 0L                      -> long are valori [-2^63;2^63-1], size 8 bytes;
+          long | 0                      -> long are valori [-2^63;2^63-1], size 8 bytes;
                                                valorile sunt afisate cu Long.MIN_VALUE, Long.MAX_VALUE
-         float | 0.0f                    -> size 4 bytes
+         float | 0.0                    -> size 4 bytes
                                             valorile sunt afisate cu Float.MIN_VALUE, Float.MAX_VALUE
          double | 0.0                      -> size 8 bytes
                                            valorile sunt afisate cu Double.MIN_VALUE, Double.MAX_VALUE
@@ -39,6 +39,9 @@ Caractere: https://www.sciencebuddies.org/science-fair-projects/references/ascii
  Exemplu:
      litera a este '\u0061'
      A este '\u0041'
+
+     pentru caractere se pot da si explicit
+     'a' 'B'
  */
 public class Ex1_Primitive {
 
