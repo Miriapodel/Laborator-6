@@ -4,7 +4,8 @@
 exemplu de afisaj: 2< 6 < 8
 
 3
-Scrieți o metodă care returnează elementul n al secvenței Fibonacci. N este citit de la tastatura
-1 2 3 5...
-1 2 (suma anterioarelor doua numere)
+Scrieți o metodă care returnează elementul N al secvenței Fibonacci. N este citit de la tastatura
+Exemplu de secventa Fibonacci 1 2 3 5 8
+Cum se formeaza secventa Fibonacci:
+1 2 (suma anterioarelor doua numere) ...
 
