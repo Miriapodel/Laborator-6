@@ -35,8 +35,15 @@
  In environment variables for your account, in PATH se adauga calea catre bin : exemplu C:\Program Files\Git\bin
 
  verificare: se deschide un command line si se scrie comanda
+ 
  git --version
 
 5.
 Extragerea materialului de pe acest git repository:
+
 git clone https://github.com/Lomenita/242PAOuniv.git
+
+6.
+daca deja aveti extrasa o varianta mai veche, pentru a lua latest, din folderul 242PAOuniv se da urmatoarea comanda:
+
+git fetch
