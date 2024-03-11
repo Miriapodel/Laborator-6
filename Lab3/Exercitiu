@@ -1,0 +1,130 @@
+Sa se defineasca in Java clasele descrise in Lab3Clase.png
+Student
+Profesor
+Person
+Aceste clase se vor face in pachetul numit "model".
+
+Student extends Person
+Profesor extends Person
+
+Sa de defineasca o clasa Application in care se citeste de la tastatura tipul de operatie:
+- create, read, update, delete
+- quit care sa opreasca aplicatia
+- help (care va afisa posibilitatie aplicatiei)
+
+Clasa Application va apela o alta clasa numita StorageService.java.
+Clasa StorageService se va defini in pachetul numit "repository".
+In clasa StorageService se vor stoca separat in doua liste(sau tablouri) studentii si profesorii.
+
+Exemplu de rulare
+================
+Adaugare student
+
+Available commands:
+create
+read
+update
+delete
+quit
+help
+Enter comand:
+create //adaugat de la tastatura
+Comand received: create
+Enter type of person:
+student //adaugat de la tastatura
+Command received: student
+name:
+Popescu Ana //adaugat de la tastatura
+phone number:
+76392799 //adaugat de la tastatura
+email:
+pa@r.com
+student number:
+10 //adaugat de la tastatura
+average mark:
+9.8
+class:
+242
+----------
+
+Adaugare profesor
+Idem se va adauga un profesor.
+Enter type of person:
+profesor
+
+Available commands:
+create
+read
+update
+delete
+quit
+help
+Enter comand:
+create //adaugat de la tastatura
+Comand received: create
+Enter type of person:
+profesor //adaugat de la tastatura
+Command received: student
+name:
+Nicolae Mihai //adaugat de la tastatura
+phone number:
+7639279945 //adaugat de la tastatura
+email:
+nm@r.com
+course:
+programare avansata obiect //adaugat de la tastatura
+year:
+2
+
+
+O noua rulare
+
+Available commands:
+create
+read
+update
+delete
+quit
+help
+Enter comand:
+read //adaugat de la tastatura
+Name:
+Ana Popescu
+ --> va afisa
+name: Ana Popescu
+phone number: 76392799
+email: pa@r.com
+student number: 10
+average mark: 9.8
+class: 242
+
+
+O noua rulare
+
+Available commands:
+create
+read
+update
+delete
+quit
+help
+Enter comand:
+read //adaugat de la tastatura
+Name:
+Nicolae Mihai
+ --> va afisa
+name: Nicolae Mihai
+phone number: 7639279945
+email: mn@r.com
+course: programare avansata obiect
+year: 2
+
+Pentru Read, update, delete identificarea obiectului se va face dupa campul nume
+
+In cazul in care obiectul cautat nu exista se va afisa:
+Not existing
+
+
+
+
+
