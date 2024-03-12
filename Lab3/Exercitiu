@@ -10,10 +10,9 @@ Profesor extends Person
 Sa de defineasca o clasa Application in care se citeste de la tastatura tipul de operatie:
 - create, read, update, delete
 - quit care sa opreasca aplicatia
-- help (care va afisa posibilitatie aplicatiei)
 
 Clasa Application va apela o alta clasa numita StorageService.java.
-Clasa StorageService se va defini in pachetul numit "repository".
+Clasa StorageService se va defini in pachetul numit "service".
 In clasa StorageService se vor stoca separat in doua liste(sau tablouri) studentii si profesorii.
 
 Exemplu de rulare
@@ -26,7 +25,6 @@ read
 update
 delete
 quit
-help
 Enter comand:
 create //adaugat de la tastatura
 Comand received: create
@@ -58,7 +56,6 @@ read
 update
 delete
 quit
-help
 Enter comand:
 create //adaugat de la tastatura
 Comand received: create
@@ -85,7 +82,6 @@ read
 update
 delete
 quit
-help
 Enter comand:
 read //adaugat de la tastatura
 Name:
@@ -107,7 +103,6 @@ read
 update
 delete
 quit
-help
 Enter comand:
 read //adaugat de la tastatura
 Name:
@@ -123,6 +118,9 @@ Pentru Read, update, delete identificarea obiectului se va face dupa campul nume
 
 In cazul in care obiectul cautat nu exista se va afisa:
 Not existing
+In cazul in care se incearca crearea unui obiect cu nume deja existent se da acest mesaj si nu face nimic:
+Already existing
+
 
 
 
