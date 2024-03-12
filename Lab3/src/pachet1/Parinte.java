@@ -103,7 +103,7 @@ public class Parinte {
 
     @Override
     public String toString() {
-        return "DemoClass{" +
+        return "Parinte{" +
                 "a = " + a +
                 ", b = " + b +
                 ", c = " + c +

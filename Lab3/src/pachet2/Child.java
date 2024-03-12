@@ -5,7 +5,7 @@ import pachet1.Parinte;
 /*
 Mostenirea
 
-in java se poate exitinde o singura clasa
+in java se poate extinde o singura clasa
 se pot implementa mai multe interfete
 */
 public class Child extends Parinte {
