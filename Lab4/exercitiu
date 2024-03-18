@@ -1,7 +1,7 @@
 Sa se implementeze un ShopingMall
-are ca variabila un BankCard
-aceasta variabila este initializata si prin constructor
-are o metoda
+- are ca variabila un BankCard
+  aceasta variabila este initializata si prin constructor
+- are o metoda
      public void achizitie(double amount)
      in aceasta metoda se va apela metoda doTransaction din BankCard
 
