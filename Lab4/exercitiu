@@ -2,24 +2,32 @@ Sa se implementeze un ShopingMall
 are ca variabila un BankCard
 aceasta variabila este initializata si prin constructor
 are o metoda
-     public void achizitie(long amount)
-     in aceasta metoda se va utiliza metoda doTransaction din BankCard
+     public void achizitie(double amount)
+     in aceasta metoda se va apela metoda doTransaction din BankCard
 
 BankCard este o interfata care are o singura metoda
-   void doTransaction(long amount)
+   void doTransaction(double amount)
+   amount reprezinta suma cheltuita la o achizitie
 
 Cardurile bancare sunt de 2 tipuri: de debit si de credit
-Se implementeaza doua recorduri care sa implementeze interfata BankCard dupa cum urmeaza:
+Se implementeaza doua clase care sa implementeze interfata BankCard dupa cum urmeaza:
 DebitCard implements BankCard
 CreditCard implements BankCard
+
 clasa DebitCard
   - are variabila statica privata spentAmount
-  - are ca variabile utilizator(este numele, String) si initialAmount (double)
-  - metoda doTransaction sa tipareasca Utilizatorul, suma cheltuita si suma ramasa
+  - are ca variabile utilizator(este numele, String) si limitAmount (double)
+  - metoda doTransaction sa tipareasca
+     "Utilizator " + utilizator + " a cheltuit " + amount
+     "Suma totala cheltuita cu carduri de debit este " + spentAmount
+    in cazul in care suma cheltuita este mai mare decat limitAmount sa tipareasca not enough money
+
  clasa CreditCard
    - variabila statica privata spentAmount
    - are ca variabile utilizator(este numele, String)
-   - metoda doTransaction sa tipareasca utilizatorul, suma cheltuita
+   - metoda doTransaction sa tipareasca
+        "Utilizator " + utilizator + " a cheltuit " + amount
+        "Suma totala cheltuita cu carduri de credit este " + spentAmount
 
 
 Clasa principala va fi Application
