@@ -14,7 +14,7 @@ Se implementeaza doua clase care sa implementeze interfata BankCard dupa cum urm
 DebitCard implements BankCard
 CreditCard implements BankCard
 
-clasa DebitCard
+record DebitCard
   - are variabila statica privata spentAmount
   - are ca variabile utilizator(este numele, String) si limitAmount (double)
   - metoda doTransaction sa tipareasca
@@ -22,7 +22,7 @@ clasa DebitCard
      "Suma totala cheltuita cu carduri de debit este " + spentAmount
     in cazul in care suma cheltuita este mai mare decat limitAmount sa tipareasca not enough money
 
- clasa CreditCard
+ record CreditCard
    - variabila statica privata spentAmount
    - are ca variabile utilizator(este numele, String)
    - metoda doTransaction sa tipareasca
