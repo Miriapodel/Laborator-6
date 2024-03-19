@@ -16,10 +16,10 @@ variabilele statice nu mai au generate automata de get si set, nu mai sunt final
 si nici nu sunt adaugate automat in toString
  */
 
-import interfete.Angajat;
-import interfete.Program;
+import interfete.Interfata1;
+import interfete.Interfata2;
 
-public record Manager(String nume, String departament, int vechime) implements Program, Angajat {
+public record Manager(String nume, String departament, int vechime) implements Interfata2, Interfata1 {
 
     private static String institutie = "Facultate";
 
@@ -51,7 +51,7 @@ public record Manager(String nume, String departament, int vechime) implements P
 
     @Override
     public double calculVechime(int ani) {
-        return Angajat.super.calculVechime(ani);
+        return Interfata1.super.calculVechime(ani);
     }
 
     //get set tr create manual; nu sunt denerate automat

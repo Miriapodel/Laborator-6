@@ -1,8 +1,8 @@
-package polimorfism;
+package polimorfism.extensie;
 
 import java.util.Objects;
 
-public class Papagal extends Pasare{
+public class Papagal extends Pasare {
     private String culoare;
 
     public Papagal(){}

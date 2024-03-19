@@ -1,5 +1,5 @@
 package interfete;
 
-public interface Program {
+public interface Interfata2 {
     int programLucru();
 }

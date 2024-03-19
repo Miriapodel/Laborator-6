@@ -1,19 +1,60 @@
-import package2.Animal;
-import polimorfism.Papagal;
-import polimorfism.Pasare;
+import clasaAbstracta.Angajat;
+import clasaAbstracta.Paznic;
+import polimorfism.Animal;
+import polimorfism.extensie.Papagal;
+import polimorfism.extensie.Pasare;
 
 public class Main {
     public static void main(String[] args) {
 
+        utilizareStatice();
+
+        //utilizarea mostenirii
+        mostenire();
+
+        //polimorfism
+        polimorfism();
+
+        //casting
+        casting();
+
+        uilizareSwitch();
+
+        //equals
+        utilizareEquals();
+    }
+
+    private static void uilizareSwitch() {
+        Animal animal = new Animal("urs" , 4);
+        Papagal papagal = new Papagal("coco","galben");
+        Animal lebada = new Pasare("lebada");
+        testSwitchBreakByDefault(animal);
+        testSwitchBreakByDefault(papagal);
+        testSwitchBreakByDefault(lebada);
+
+    }
+
+    private static void casting() {
+        Animal lebada = new Pasare("lebada");
+        Animal animal5 = new Papagal();
+
+        Pasare p2 = (Pasare) lebada;//nu da err
+
+        Animal animal6 =  new Animal();
+        //Pasare pasare2 = (Pasare) animal6; //da err la compilare
+
+    }
+
+    private static void utilizareStatice() {
         //diverse apeluri ale constructorilor
         Animal animal1 = new Animal(); //constuctor default;
-                                      // Variabilele clasei vor trebui setate prin set-eri
+        // Variabilele clasei vor trebui setate prin set-eri
         Animal animal = new Animal("urs" , 4);
 
         //este metoda nestatica apelata in context static; se face prin instantierea clasei cu new ..
         animal.eats(); // -> "Animal eats meat"
         //animal.habitat(); //err de compilare;
-                            // nu e vizibil deoarece e protected si incerc sa il apelez din alt pachet
+        // nu e vizibil deoarece e protected si incerc sa il apelez din alt pachet
         animal.getLegs(); //se poate apela deoarece si metoda main si getLegs sunt ambele statice
 
         Papagal papagal = new Papagal("coco","galben");
@@ -25,26 +66,18 @@ public class Main {
         Papagal.getLegs();
 
         papagal.cover();
+    }
 
-        //utilizarea mostenirii
-        System.out.println("utilizarea mostenirii");
-        Animal animal2 =  new Pasare();
-        animal2.eats();
-        animal2.getLegs(); // -> afiseaza Animal are 4 picioare deoarece metoda este statica
-                          // metodele statice nu se suprascriu, deci se va executa metoda din parinte
-        //metoda statica getLegs din Pasare este disponibila doar cand instantierea nu este pin mostenire
-        Pasare pasare = new Pasare();
-        pasare.getLegs(); // -> afiseaza Pasarea are 2 picioare
+    private static void utilizareEquals() {
+        Animal animal3 = new Animal("lup", 4);
+        Animal animal4 = new Animal("lup", 4);
+        System.out.println(animal4 == animal3 );//false deoarece sunt 2 obiecte diferite
 
-        Animal papagal2 = new Papagal();
-        papagal2.cover();
-        papagal2.eats();
-       // papagal2.habitat(); //in Animal habitat este protected;
-                            // la utilizarea prin mostenire acesta nu mai este vizibil
+        System.out.println(animal4.equals(animal3)); //va fi true deoarece va utiliza metoda equals definita in clasa Animal
 
-        //papagal2.descriere(); //descriere este protected in parinte. Este vizibil doar in interiorul obiectului Papagal
+    }
 
-        //polimorfism
+    private static void polimorfism() {
         System.out.println("Polimorfism: ");
         Animal animal3 = new Animal("lup", 4);
         Pasare pasare1 = new Pasare("egreta");
@@ -54,29 +87,28 @@ public class Main {
         papagal1.cover();
 
         pasare1.habitat();//vizibil deoarece modificatorul de acces este public
-                          // iar utilizarea se face direct dn clasa Pasare
+        // iar utilizarea se face direct dn clasa Pasare
 
 
-        //casting
-        Animal lebada = new Pasare("lebada");
-        Animal animal5 = new Papagal();
+    }
 
-        Pasare p2 = (Pasare) lebada;//nu da err
+    private static void mostenire() {
+        System.out.println("utilizarea mostenirii");
+        Animal animal2 =  new Pasare();
+        animal2.eats();
+        animal2.getLegs(); // -> afiseaza Animal are 4 picioare deoarece metoda este statica
+        // metodele statice nu se suprascriu, deci se va executa metoda din parinte
+        //metoda statica getLegs din Pasare este disponibila doar cand instantierea nu este pin mostenire
+        Pasare pasare = new Pasare();
+        pasare.getLegs(); // -> afiseaza Pasarea are 2 picioare
 
-        Animal animal6 =  new Animal();
-      //  Pasare pasare2 = (Pasare) animal6; //da err la compilare
+        Animal papagal2 = new Papagal();
+        papagal2.cover();
+        papagal2.eats();
+        // papagal2.habitat(); //in Animal habitat este protected;
+        // la utilizarea prin mostenire acesta nu mai este vizibil
 
-
-        testSwitchBreakByDefault(animal);
-        testSwitchBreakByDefault(papagal);
-        testSwitchBreakByDefault(lebada);
-
-        //equals
-        Animal animal4 = new Animal("lup", 4);
-        System.out.println(animal4 == animal3 );//false deoarece sunt 2 obiecte diferite
-
-        System.out.println(animal4.equals(animal3)); //va fi true deoarece va utiliza metoda equals definita in clasa Animal
-
+        //papagal2.descriere(); //descriere este protected in parinte. Este vizibil doar in interiorul obiectului Papagal
     }
 
     //tip de switch aparut la java 17

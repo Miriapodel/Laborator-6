@@ -1,6 +1,6 @@
-package polimorfism;
+package polimorfism.extensie;
 
-import package2.Animal;
+import polimorfism.Animal;
 
 public class Pasare extends Animal {
 
