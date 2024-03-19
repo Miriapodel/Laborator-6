@@ -11,11 +11,12 @@ public class Sofer implements Interfata1, Interfata2 {
 
     @Override
     public double calculVechime(int ani) {
-        return Interfata1.super.calculVechime(ani);
+        return ani *4;
     }
 
     @Override
     public int programLucru() {
-        return 0;
+        System.out.println("5 ore");
+        return 5;
     }
 }

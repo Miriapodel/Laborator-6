@@ -10,13 +10,8 @@ public class Portar implements Interfata1, Interfata2 {
     }
 
     @Override
-    public double calculVechime(int ani) {
-        return Interfata1.super.calculVechime(ani);
-    }
-
-    @Override
     public int programLucru() {
         System.out.println("8 ore");
-        return 0;
+        return 8;
     }
 }

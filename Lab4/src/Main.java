@@ -1,5 +1,4 @@
-import clasaAbstracta.Angajat;
-import clasaAbstracta.Paznic;
+import interfete.impl.Portar;
 import polimorfism.Animal;
 import polimorfism.extensie.Papagal;
 import polimorfism.extensie.Pasare;
@@ -22,6 +21,8 @@ public class Main {
 
         //equals
         utilizareEquals();
+
+        interfete();
     }
 
     private static void uilizareSwitch() {
@@ -140,6 +141,12 @@ public class Main {
             case Double d -> System.out.println("Double " + d);
             default -> System.out.println(object);
         }
+    }
+
+    private static void interfete(){
+        Portar portar = new Portar();
+        portar.calculVechime(2);
+        portar.programLucru();
     }
 
 }
