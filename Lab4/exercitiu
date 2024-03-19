@@ -32,7 +32,7 @@ record DebitCard
 
 Clasa principala va fi Application
 in main va fi instantiata clasa ShoppingMall (o singura data)
-se vor folosi pe rand DebitCard si CreditCard
+se vor folosi pe rand DebitCard si CreditCard ca sa apelam metoda achizitie
 din acest shoping mall se vor face achizitii pe rand cu cardul de debit si de credit si se va afisa
 
 
