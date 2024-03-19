@@ -1,12 +1,12 @@
 Sa se implementeze clasele
 Cerc
-Patrulater
+Patrat
 
 interfata Calcul
    va contine metoda calculPerimetru
 
 
-Cerc si Patrulater implementeaza interfata Calcul
+Cerc si Patrat implementeaza interfata Calcul
 
 Clasa principala care are metoda main va fi Application
 In Application se va afisa perimetrul pentru cerc si patrulater.
