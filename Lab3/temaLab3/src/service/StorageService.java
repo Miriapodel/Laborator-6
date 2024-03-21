@@ -77,14 +77,15 @@ public class StorageService {
         if(typeOfPerson.equals(PROFESSOR)){
             Professor professor = new Professor(person);
             professorInit(scanner, professor);
-            databaseService.addPerson(professor);
-            System.out.println("Created " + professor);
+            person = professor;
         } else {
             Student student = new Student(person);
             studentInit(scanner, student);
-            databaseService.addPerson(student);
-            System.out.println("Created " + student);
+            person = student;
         }
+
+        databaseService.addPerson(person);
+        System.out.println("Created " + person);
     }
 
     private Person setGeneralInfo(String name, Scanner scanner) {
@@ -116,7 +117,6 @@ public class StorageService {
         int year = scanner.nextInt();
         scanner.nextLine(); // asta va citi \n care nu este preluat de nextInt.
         // Daca nu e folosit, \n ramane in scanner si produce reluarea comenzii
-
         professor.setCourse(course);
         professor.setYear(year);
     }
