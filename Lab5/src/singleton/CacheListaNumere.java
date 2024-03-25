@@ -9,7 +9,7 @@ public class CacheListaNumere {
 
     //are ca parametru chiar o instanta a clasei; este STATIC
     private static CacheListaNumere cacheListaNumere;
-    private static List<Integer> stocareIntregi = new ArrayList<>();
+    private List<Integer> stocareIntregi = new ArrayList<>();
 
     //constructorul este intotdeauna privat ca sa nu poata fi instantiat
     private CacheListaNumere(){}
