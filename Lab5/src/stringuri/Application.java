@@ -37,7 +37,7 @@ public class Application {
 
         System.out.println(text.length());
 
-        System.out.println((text.replaceAll("[ .]", "")).matches("[A-Za-z]{1,}"));
+        System.out.println((text.replaceAll("[ .]", "")).matches("[A-Za-z]+"));
         StringBuilder stringBuilder = new StringBuilder(text);
         System.out.println(stringBuilder.reverse());
 
