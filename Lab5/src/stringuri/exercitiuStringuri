@@ -1,0 +1,14 @@
+1) In cursul 4, pagina 6-7 se afla moduri de utilizare a expresiilor regulate
+Sa se faca pentru fiecare cate un exemplu care sa returneze true.
+
+2)
+Se da stringul
+"Odata creat un sir de caractere cu continutul sau nu mai poate fi modificat."
+
+1. sa se afiseze lungimea
+
+ Folosind expresii regulate sa se implementeze:
+2. sa se afiseze true/false daca are doar litere mari si litere mici
+3. sa se imparta textul in cuvinte si sa se afiseze cuvintele de la mijloc
+   (deoarece textul are numar par de cuvinte se va afisa : cu continutul)
+4. se se afiseze stringul reverse (vezi StringBuilder)
