@@ -1,17 +1,14 @@
 package temaLab3.repository;
 
 import temaLab3.model.Professor;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class ProfessorRepository {
 
-    private List<Professor> professors;
-
-    public ProfessorRepository() {
-        this.professors = new ArrayList<>();
-    }
+    //se face static pentru a apartine clasei; odata initializat
+    // nu se initializeaza iar in cazul utilizarii in mai multe clase
+    private static List<Professor> professors = new ArrayList<>();
 
     public Professor read(String name) {
         if(!professors.isEmpty()){

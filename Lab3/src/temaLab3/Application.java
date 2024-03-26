@@ -1,7 +1,5 @@
 package temaLab3;
 
-
-
 import temaLab3.service.BibliotecaService;
 import temaLab3.service.PersonService;
 
@@ -11,7 +9,7 @@ public class Application {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        PersonService storageService = new PersonService();
+        PersonService personService = new PersonService();
 
         BibliotecaService bibliotecaService = new BibliotecaService();
 
@@ -23,16 +21,16 @@ public class Application {
             System.out.println("Command received: " + command);
             switch (command){
                 case "create":
-                    storageService.create(scanner);
+                    personService.create(scanner);
                     break;
                 case "read":
-                    storageService.read(scanner);
+                    personService.read(scanner);
                     break;
                 case "delete":
-                    storageService.delete(scanner);
+                    personService.delete(scanner);
                     break;
                 case "update":
-                    storageService.update(scanner);
+                    personService.update(scanner);
                     break;
                 case "quit":
                     System.out.println("Exiting");
@@ -50,6 +48,7 @@ public class Application {
         System.out.println("update");
         System.out.println("delete");
         System.out.println("quit");
+        System.out.println("get");
         System.out.println("Enter command:");
     }
 }

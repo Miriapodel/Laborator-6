@@ -2,17 +2,15 @@ package temaLab3.repository;
 
 import temaLab3.model.Person;
 import temaLab3.model.Student;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class StudentRepository {
 
-    private List<Student> students;
 
-    public StudentRepository() {
-        this.students = new ArrayList<>();
-    }
+    //se face static pentru a apartine clasei; odata initializat
+    // nu se initializeaza iar in cazul utilizarii in mai multe clase
+    private static List<Student> students = new ArrayList<>();
 
     public void create(Student student) {
         students.add(student);
@@ -32,7 +30,4 @@ public class StudentRepository {
     public void delete(Person person) {
         students.remove(person);
     }
-
-
-
 }
