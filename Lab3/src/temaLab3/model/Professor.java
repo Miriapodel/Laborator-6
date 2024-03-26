@@ -1,4 +1,4 @@
-package model;
+package temaLab3.model;
 
 public class Professor extends Person{
 

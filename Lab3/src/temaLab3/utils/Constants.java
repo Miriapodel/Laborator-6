@@ -1,4 +1,4 @@
-package utils;
+package temaLab3.utils;
 
 public class Constants {
     public static final String STUDENT = "student";

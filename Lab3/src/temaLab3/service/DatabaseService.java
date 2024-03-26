@@ -1,12 +1,12 @@
-package service;
+package temaLab3.service;
 
-import model.Person;
-import model.Professor;
-import model.Student;
-import repository.ProfessorRepository;
-import repository.StudentRepository;
+import temaLab3.model.Person;
+import temaLab3.repository.ProfessorRepository;
+import temaLab3.repository.StudentRepository;
+import temaLab3.model.Professor;
+import temaLab3.model.Student;
 
-import static utils.Constants.PROFESSOR;
+import static temaLab3.utils.Constants.PROFESSOR;
 
 public class DatabaseService {
 

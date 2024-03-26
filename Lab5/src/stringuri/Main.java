@@ -25,7 +25,7 @@ public class Main {
 
         text1 = text1 + " adaos";
         System.out.println(text1);
-        text1.concat("concatenare");
+        text1.concat("concatenare1");
         System.out.println(text1);
         text1 = text1.concat("concatenare");
         System.out.println(text1);

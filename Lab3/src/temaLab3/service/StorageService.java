@@ -1,11 +1,13 @@
-package service;
+package temaLab3.service;
 
-import model.Person;
-import model.Professor;
-import model.Student;
+import temaLab3.model.Person;
+import temaLab3.model.Professor;
+import temaLab3.model.Student;
+
 import java.util.Scanner;
-import static utils.Constants.PROFESSOR;
-import static utils.Constants.STUDENT;
+
+import static temaLab3.utils.Constants.PROFESSOR;
+import static temaLab3.utils.Constants.STUDENT;
 
 public class StorageService {
     private DatabaseService databaseService;

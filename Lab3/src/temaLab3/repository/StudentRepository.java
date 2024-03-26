@@ -1,7 +1,7 @@
-package repository;
+package temaLab3.repository;
 
-import model.Person;
-import model.Student;
+import temaLab3.model.Person;
+import temaLab3.model.Student;
 
 import java.util.ArrayList;
 import java.util.List;

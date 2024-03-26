@@ -1,6 +1,4 @@
-package model;
-
-import java.util.Objects;
+package temaLab3.model;
 
 public class Student extends Person{
     private int studentNumber;

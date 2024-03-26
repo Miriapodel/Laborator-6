@@ -1,4 +1,8 @@
-import service.StorageService;
+package temaLab3;
+
+
+
+import temaLab3.service.StorageService;
 
 import java.util.Scanner;
 
