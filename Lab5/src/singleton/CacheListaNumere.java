@@ -3,7 +3,7 @@ package singleton;
 import java.util.ArrayList;
 import java.util.List;
 
-//exemplu de singleton design pattern
+//exemplu de singleton design pattern: CREATIONAL desing pattern
 //constructorul este intotdeauna privat ca sa nu poata fi instantiat
 public class CacheListaNumere {
 

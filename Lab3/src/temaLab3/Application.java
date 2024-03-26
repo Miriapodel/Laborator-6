@@ -2,7 +2,8 @@ package temaLab3;
 
 
 
-import temaLab3.service.StorageService;
+import temaLab3.service.BibliotecaService;
+import temaLab3.service.PersonService;
 
 import java.util.Scanner;
 
@@ -10,7 +11,9 @@ public class Application {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        StorageService storageService = new StorageService();
+        PersonService storageService = new PersonService();
+
+        BibliotecaService bibliotecaService = new BibliotecaService();
 
         while (true){ //acesta va rula la infinit pana apare comanda return (care iese din metoda main)
                       // sau break in main

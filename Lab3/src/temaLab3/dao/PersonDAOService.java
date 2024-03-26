@@ -1,4 +1,4 @@
-package temaLab3.service;
+package temaLab3.dao;
 
 import temaLab3.model.Person;
 import temaLab3.repository.ProfessorRepository;
@@ -8,12 +8,12 @@ import temaLab3.model.Student;
 
 import static temaLab3.utils.Constants.PROFESSOR;
 
-public class DatabaseService {
+public class PersonDAOService {
 
     private ProfessorRepository professorRepository;
     private StudentRepository studentRepository;
 
-    public DatabaseService() {
+    public PersonDAOService() {
         this.professorRepository = new ProfessorRepository();
         this.studentRepository = new StudentRepository();
     }
