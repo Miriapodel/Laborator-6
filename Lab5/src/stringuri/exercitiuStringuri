@@ -1,6 +1,9 @@
 1) In cursul 4, pagina 6-7 se afla moduri de utilizare a expresiilor regulate
 Sa se faca pentru fiecare cate un exemplu care sa returneze true.
 
+exemplu
+ System.out.println("a".matches("[abc]"));
+
 2)
 Se da stringul
 "Odata creat un sir de caractere cu continutul sau nu mai poate fi modificat."
