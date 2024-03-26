@@ -12,7 +12,7 @@ Este utilizata pt stocarea si transportarea datelor
 au by default  implementate toString, hashCode, equals
 se genereaza automat getere settere pt variablilele nestatice
 
-variabilele statice nu mai au generate automata de get si set, nu mai sunt finale
+variabilele statice nu mai au generate automata de get, nu mai sunt finale
 si nici nu sunt adaugate automat in toString
  */
 
