@@ -2,6 +2,7 @@ Am definit urmatoarea structura:
 
 In Application am afisat meniul si am preluat tipul de comanda
 apoi toate comenzile sunt preluate de PersonService.
+
 (StorageService -> l-am redenumit in PersonService)
 
 In PersonService am facut in continuare citiri de la tastatura cu scanner.
@@ -24,5 +25,9 @@ In clasele de tip repository datele vin deja filtrate. Aceste clase nu scriu mes
 ProfessorRpository contine lista professors + operatii pe ea.
 
 StudentRepository contine lista students + operatii pe ea.
+
+Clasele repository au listele de persoane. 
+Observati ca aceste clase au variabilele clasei private static, sunt initializate inline si ca nu au constructor.
+Sunt statice astfel incat daca se face accesarea lor din diverse alte clase sa nu se reinitializeze obiectele care stocheaza.
 
 Momentan stocarea se face in listele students si professors.
