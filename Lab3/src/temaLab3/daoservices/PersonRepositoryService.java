@@ -1,25 +1,25 @@
-package temaLab3.dao;
+package temaLab3.daoservices;
 
 import temaLab3.model.Person;
-import temaLab3.repository.ProfessorRepository;
-import temaLab3.repository.StudentRepository;
+import temaLab3.dao.ProfessorDao;
+import temaLab3.dao.StudentDao;
 import temaLab3.model.Professor;
 import temaLab3.model.Student;
 
 import static temaLab3.utils.Constants.PROFESSOR;
 
-public class PersonDAOService {
+public class PersonRepositoryService {
 
-    private ProfessorRepository professorRepository;
-    private StudentRepository studentRepository;
+    private ProfessorDao professorDao;
+    private StudentDao studentDao;
 
-    public PersonDAOService() {
-        this.professorRepository = new ProfessorRepository();
-        this.studentRepository = new StudentRepository();
+    public PersonRepositoryService() {
+        this.professorDao = new ProfessorDao();
+        this.studentDao = new StudentDao();
     }
 
     public Student getStudentByName(String name){
-        Student student = studentRepository.read(name);
+        Student student = studentDao.read(name);
         if(student != null){
             System.out.println(student);
         }else {
@@ -30,7 +30,7 @@ public class PersonDAOService {
     }
 
     public Professor getProfessorByName(String name){
-        Professor professor = professorRepository.read(name);
+        Professor professor = professorDao.read(name);
         if(professor != null){
             System.out.println(professor);
         }else {
@@ -44,8 +44,8 @@ public class PersonDAOService {
         if (person == null) return;
 
         switch (person){
-                case Professor professor -> professorRepository.delete(professor);
-                case Student student -> studentRepository.delete(student);
+                case Professor professor -> professorDao.delete(professor);
+                case Student student -> studentDao.delete(student);
                 default -> throw new IllegalStateException("Unexpected value: " + person);
         }
 
@@ -55,8 +55,8 @@ public class PersonDAOService {
     public void addPerson(Person person) {
         if(person != null){
             switch (person){
-                case Professor professor-> professorRepository.create(professor);
-                case Student student -> studentRepository.create(student);
+                case Professor professor-> professorDao.create(professor);
+                case Student student -> studentDao.create(student);
                 default -> throw new IllegalStateException("Unexpected value: " + person);
             }
         }

@@ -1,6 +1,6 @@
 package temaLab3.service;
 
-import temaLab3.dao.PersonDAOService;
+import temaLab3.daoservices.PersonRepositoryService;
 import temaLab3.model.Person;
 import temaLab3.model.Professor;
 import temaLab3.model.Student;
@@ -11,10 +11,10 @@ import static temaLab3.utils.Constants.PROFESSOR;
 import static temaLab3.utils.Constants.STUDENT;
 
 public class PersonService {
-    private PersonDAOService databaseService;
+    private PersonRepositoryService databaseService;
 
     public PersonService(){
-       this.databaseService = new PersonDAOService();
+       this.databaseService = new PersonRepositoryService();
     }
 
     public void create(Scanner scanner) {

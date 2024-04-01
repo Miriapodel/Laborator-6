@@ -1,9 +1,9 @@
 package temaLab3.service;
 
-import temaLab3.dao.BibliotecaDAOService;
+import temaLab3.daoservices.BibliotecaRepositoryService;
 
 public class BibliotecaService {
 
-    private BibliotecaDAOService bibliotecaDAOService;
+    private BibliotecaRepositoryService bibliotecaRepositoryService;
 
 }

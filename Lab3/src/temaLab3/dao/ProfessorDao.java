@@ -1,10 +1,10 @@
-package temaLab3.repository;
+package temaLab3.dao;
 
 import temaLab3.model.Professor;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProfessorRepository {
+public class ProfessorDao {
 
     //se face static pentru a apartine clasei; odata initializat
     // nu se initializeaza iar in cazul utilizarii in mai multe clase
