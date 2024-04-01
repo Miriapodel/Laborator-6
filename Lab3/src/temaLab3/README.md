@@ -7,7 +7,7 @@ apoi toate comenzile sunt preluate de PersonService.
 
 In PersonService am facut in continuare citiri de la tastatura cu scanner.
 
-In PersonService am conectat un alt serviciu numit PersonDAOService.
+In PersonService am conectat un alt serviciu numit PersonRepositoryService.
 PersonRepositoryService primeste cereri catre repository urile care conecteaza baza de date.
 Momentan baza de date consta in listele de studenti si profesori aflate in ProfessorDao si StudentDao.
 
