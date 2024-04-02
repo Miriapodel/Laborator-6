@@ -34,7 +34,7 @@ public class Main {
                 Comparator.comparing(Persoana::getNume)
                 .thenComparing(Persoana::getPrenume)
                 .thenComparing(Persoana::getVarsta));
-        System.out.println("java8 default comparator methods -> Sortat qList = " + persoanaList);
+        System.out.println("incepand cu java8 comparator -> Sortat qList = " + persoanaList);
 
        // System.out.println("test".equals(null));
       //  System.out.println(persoanaList.get(0).getNume().compareTo(null)); //arunca null pointer exception
