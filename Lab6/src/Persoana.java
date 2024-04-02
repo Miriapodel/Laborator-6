@@ -9,7 +9,6 @@ public class Persoana implements Comparable<Persoana> {
         this.varsta = varsta;
     }
 
-    // face o sortare alfabetica; face o sortare naturala
     public int compareTo(Persoana obiectDeComparat){
 
         return this.nume.compareTo(obiectDeComparat.nume);
