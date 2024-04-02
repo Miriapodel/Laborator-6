@@ -5,9 +5,13 @@ keyword : interface
 definite pentru CAN_DO
 
 public interface MyInterface{
+
    constante //public static final ; sunt constante by default deci trebuie initializate in interfata
+  
    metode implicitte (default) cu implementare
+  
    metode statice cu implementare
+  
    metode private cu implementare //folosite in cazul in 
                        //care metodele anterioare au mneoie de prelucrari suplimantare
 
@@ -40,19 +44,29 @@ Daca o interfata nu are implementare, se va face definire prin clasa anonima (ex
 
 Interfete utilitare
 1) Comparable -> contine metoda compareTo care primeste 1 obiect de comparat
-    aceasta interfata va fi implementata de clasa pe care dorim sa facem compararile
+
+   Aceasta interfata va fi implementata de clasa pe care dorim sa facem compararile
+
 class Persoana implements Comparable<Persoana>{
+
    private String nume;
+
    private String prenume;
+
    private int varsta;
 
    // face o sortare alfabetica; face o sortare naturala
+
    public int compareTo(Persoana obiectDeComparat){
+
        return this.nume.compareTo(obiectDeComparat.nume);
+
    }
+
 }
 
 2) Comparator -> contine metoda compare care primeste cele 2 obiecte de comparat
+
    Aceasta interfata va fi implementata pe o clasa utilitara (nu este clasa care defineste obiectul de comparat)
 class PersoanaComparatorVarsta implements Comparator<Persoana>{
    
@@ -64,10 +78,9 @@ class PersoanaComparatorVarsta implements Comparator<Persoana>{
 class PersoanaComparatorNume implements Comparator<Persoana>{
 
       public int compare(Persoana persoana1, Persoana persoana2){
+
            return persoana1.nume.compareTo(persoana2.nume);
+
       }     
 }
-
-
-ca o interfata sa fie functionala trebuie sa aiba o metoda neimplementata si sa fie marcata ca @FunctionalInterface
 
