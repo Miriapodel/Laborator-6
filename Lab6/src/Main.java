@@ -36,5 +36,7 @@ public class Main {
                 .thenComparing(Persoana::getVarsta));
         System.out.println("java8 default comparator methods -> Sortat qList = " + persoanaList);
 
+       // System.out.println("test".equals(null));
+      //  System.out.println(persoanaList.get(0).getNume().compareTo(null)); //arunca null pointer exception
     }
 }
