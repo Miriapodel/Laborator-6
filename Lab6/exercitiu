@@ -1,0 +1,22 @@
+Sa se implementeze un ShoppingMall.
+Acesta are o lista de Magazine.
+Magazin -> are id, numeMagazin, proprietar, venit, suprafata, chirie.
+Proprietar -> are nume, prenume, varsta
+Un proprietar poate avea mai multe magazine.
+
+Magazin este de 3 tipuri: MagazinAlimentar, MagazinHaine, MagazinChimicale
+Chiria se va calcula in functie de tipul magazinului:
+   Pentru MagazinAlimentar chiria este suprafata * 2
+   Pentru MagazinHaine chiria este suprafata * 3
+   Pentru MagazinChimicale chiria este suprafata * 4
+Pentru setChirie, in Magazin, se va folosi mecanismul de callback definit in cursul 5, pag 7-8.
+(callback = transmiterea unei metode ca argument al altei metode)
+
+Sa se afiseze:
+- lista de magazine sortata dupa: nume proprietar, prenume proprietar, chiria platita. Se foloseste Comparator.
+- lista de magazine ale unui proprietar, afisare sortata dupa numeMagazin, venit, chirie, suprafata. Se foloseste Comparator.
+- venitul total obtinut de un proprietar
+- chiria totala platita de un proprietar
+
+
+Aplicatia porneste din clasa principala Main.
