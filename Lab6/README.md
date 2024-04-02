@@ -39,6 +39,7 @@ O clasa care implementeaza mai multe interfete:
 - daca metoda implementata are aceiasi semnatura si alt tip pt valoarea returnata => eroare de compilare
 
 La utilizarea interfetelor exista mecanismul de callback=> in clasa curenta exista metoda care are ca parametri o interfata
+
 Daca o interfata nu are implementare, se va face definire prin clasa anonima (exemplu curs 8, pag 9)
 
 
@@ -55,7 +56,7 @@ class Persoana implements Comparable<Persoana>{
 
    private int varsta;
 
-   // face o sortare alfabetica; face o sortare naturala
+   //alfabetic
 
    public int compareTo(Persoana obiectDeComparat){
 
@@ -68,10 +69,13 @@ class Persoana implements Comparable<Persoana>{
 2) Comparator -> contine metoda compare care primeste cele 2 obiecte de comparat
 
    Aceasta interfata va fi implementata pe o clasa utilitara (nu este clasa care defineste obiectul de comparat)
-class PersoanaComparatorVarsta implements Comparator<Persoana>{
+
+  class PersoanaComparatorVarsta implements Comparator<Persoana>{
    
       public int compare(Persoana persoana1, Persoana persoana2){
+
            return persoana1.getVarsta() + persoana2. getVarsta(); 
+
       }     
 }
 
